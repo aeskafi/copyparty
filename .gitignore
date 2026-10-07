@@ -52,3 +52,8 @@ result-*
 
 # IDEA config
 .idea/
+
+# environments & runtime data
+.env*
+!.env.example
+data/

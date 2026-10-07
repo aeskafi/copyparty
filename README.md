@@ -1,8 +1,22 @@
-<img src="https://github.com/9001/copyparty/raw/hovudstraum/docs/logo.svg" width="250" align="right"/>
+<img src="https://github.com/9001/copyparty/raw/hovudstraum/docs/logo.svg" width="220" align="right"/>
 
-### 💾🎉 copyparty
+# 💾🎉 copyparty
 
-turn almost any device into a file server with resumable uploads/downloads using [*any*](#browser-support) web browser
+> Portable, zero-dependency file server with accelerated resumable uploads, WebDAV, SFTP, audio streaming, and deduplication.
+
+[![Python: 3.8+](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Docker Ready](https://img.shields.io/badge/Docker-Compose%20Ready-2496ED?style=flat-square&logo=docker&logoColor=white)](docker-compose.yml)
+[![Dependencies](https://img.shields.io/badge/Dependencies-Zero%20(Pure%20Python)-10b981?style=flat-square)](copyparty)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+[![Curator: Arham Eskafi](https://img.shields.io/badge/Curator-Arham%20Eskafi-f97316?style=flat-square)](https://arham.dev)
+[![Walk Cook Live](https://img.shields.io/badge/Nomad%20Journey-Walk%20Cook%20Live-red?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/@walkcooklive)
+
+> [!TIP]
+> **Tech Nomad Distribution**: Curated by **Arham Eskafi** ([arham.dev](https://arham.dev)) for rapid file synchronization and offline media streaming during the overland expedition on [Walk Cook Live](https://youtube.com/@walkcooklive).
+>
+> **1-Step Run**: `python3 -m copyparty -v .::rw -p 3923` or `docker compose up -d`
+
+---
 
 * server only needs Python (2 or 3), all dependencies optional
 * 🔌 protocols: [http(s)](#the-browser) // [webdav](#webdav-server) // [sftp](#sftp-server) // [ftp(s)](#ftp-server) // [tftp](#tftp-server) // [smb/cifs](#smb-server)

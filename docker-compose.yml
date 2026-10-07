@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  copyparty:
+    image: copyparty/ac:latest
+    container_name: copyparty
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3923}:3923"
+    environment:
+      - LD_PRELOAD=/usr/lib/libjemalloc.so
+    volumes:
+      - ./srv:/cfg
+      - ${SHARED_DIR:-./data}:/w:rw
+    command:
+      - -c
+      - /cfg/copyparty.conf
